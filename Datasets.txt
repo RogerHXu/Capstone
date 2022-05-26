@@ -1,5 +1,0 @@
-Amazon: https://nijianmo.github.io/amazon/index.html, https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews
-
-Wildfire: https://www.kaggle.com/rtatman/188-million-us-wildfires
-
-Covid: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data
