@@ -22,7 +22,7 @@ matplotlib.style.use('ggplot')
 # learning parameters
 batch_size = 64 # batch size, reduce if facing OOM error
 #epochs = 100 # number of epochs to train the SRCNN model for
-epochs = 50
+epochs = 20
 lr = 0.001 # the learning rate
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -99,6 +99,9 @@ print(model)
 
 #optimizer
 optimizer = optim.Adam(model.parameters(), lr=lr)
+optimizer = optim.Adam(model.parameters(), lr=lr)
+optimizer = optim.Adam(model.parameters(), lr=lr)
+
 criterion = nn.MSELoss()
 
 
