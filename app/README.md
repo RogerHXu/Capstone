@@ -1,0 +1,2 @@
+To install and run the project, you need to download the following packages:
+flask, Pilloq, Pytorch, numpy, and Werkzeug. After downloading the files just goto the directory where app.py is located and type "python app.py" into the console. Then open the browser and go to 0.0.0.0/80, it should take you to the API page where you can choose and upload an image and see the super-res'd image displayed as result
