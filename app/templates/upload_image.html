@@ -1,0 +1,32 @@
+{% block main %}
+<!DOCTYPE html>
+<div class = "container">
+  <div class = "row">
+    <div class = "col">
+      <h1>Upload image</h1>
+      <hr>
+      <form action="/" method="POST" enctype="multipart/form-data">
+
+        <div class = "form-group">
+          <label>Select image</label>
+          <div class = "custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image"></label>
+          </div>
+        </div>
+        <button type = "submit" class="btn btn-primary">upload</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% if filename %}
+<label>Original:</label>
+  <div>
+    <img src="{{ url_for('display_image', filename=filename) }}">
+  </div>
+<label>Enhanced:</label>
+  <div>
+    <img src="{{ url_for('display_new_image', filename=filename) }}">
+  </div>
+{% endif %}
+{% endblock %}
